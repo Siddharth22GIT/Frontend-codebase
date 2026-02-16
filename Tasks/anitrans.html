@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 80vh;
+        display: flex;
+        gap: 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .message{
+        background-color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        transition: background-color 2s, color 2s;
+    }
+
+    .message:hover{
+        background-color: red;
+        color: yellow;
+    }
+
+    .image{
+        background-color: red;
+        padding: 20px;
+        border-radius: 5px;
+        animation: clr 2s infinite;
+        img{
+            width: 400px;
+            height: 250px;
+            border-radius: 5px;
+            animation: pulse 2s infinite;
+        }
+    }
+
+    @keyframes pulse{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.05);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    @keyframes clr{
+        0%{
+            background-color: red;
+        }
+        50%{
+            background-color: green;
+        }
+        75%{
+            background-color: blue;
+        }
+        100%{
+            background-color: red;
+        }
+    }
+</style>
+<body>
+    <div class="message">
+        <h1><span id="name"></span></h1>
+    </div>
+    <div class="image">
+        <img src="/images/scene1.png" alt="">
+    </div>
+</body>
+<script>
+    let name1 = prompt("What is your name?");
+    let finalText = "Welcome " + name1
+    document.getElementById("name").innerText = finalText
+
+</script>
+</html>

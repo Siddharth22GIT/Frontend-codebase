@@ -1,0 +1,47 @@
+body{
+background-color: black;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.header{
+    background-color: rgb(119, 114, 114);
+    border: 3px solid red;
+    margin-bottom: 10px;
+}
+
+.header-container{
+    text-align: center;
+    padding: 10px;
+}
+h1:hover{
+    color: rgb(205, 0, 0);
+}
+p:hover{
+    color: rgb(255, 255, 255);
+}
+.content{
+    background-color: rgb(68, 0, 27);
+}
+
+.section{
+    margin: auto;
+    padding: 10px;
+}
+
+.card{
+    background-color: rgb(221, 154, 0);
+    padding: 10px;
+    border: 2px solid rgb(47, 71, 255);
+}
+
+.footer{
+    background-color: rgb(33, 1, 89);
+    margin-top: 20px;
+}
+
+.footer-content{
+    color: rgb(255, 0, 0);
+    padding: 3px;
+    text-align: center;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    position: relative;
+    button{
+        width: 100px;
+        height: 80px;
+        font-size: 100px;
+        color: white;
+    }
+
+    button:hover{
+        color: rgb(126, 197, 255);
+    }
+
+    .prev{
+        position: absolute;
+        bottom: 220px;
+        left: 10px;
+        border: none;
+        background-color: inherit;
+
+    }
+
+    .next{
+        position: absolute;
+        bottom: 220px;
+        left: 890px;
+        border: none;
+        background-color: inherit;
+    }
+}
+</style>
+<body>
+    <div class="content">
+        <img src="/images/scene1.png" alt="" id="slider" height="500px" width="1000px">
+        <br>
+        <button onclick="previous()" class="prev"><</button>
+        <button onclick="next()" class="next">></button>
+    </div>
+    
+</body>
+<script>
+
+    let images = [ 
+        "/images/scene1.png",
+        "/images/scene2.png",
+        "/images/bunny.jpg",
+    ]
+
+    let index = 0
+
+    function showImage(){
+        document.getElementById("slider").src = images[index]
+    }
+
+    function next(){
+        index = (index + 1) % images.length
+        showImage()
+    }
+
+    function previous(){
+        index = (index - 1 + images.length) % images.length
+        showImage()
+    }
+</script>
+</html>

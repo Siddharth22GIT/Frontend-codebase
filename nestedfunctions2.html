@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested functions 2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function order(product){
+        function calculatePrice(price, tax){
+            return price + tax
+        }
+
+        function printBill(total){
+            console.log("Product: ", product)
+            console.log("Total price: ", total);
+        }
+
+        var total = calculatePrice(100000, 10000)
+        printBill(total)
+    }
+
+    order("Etherium")
+</script>
+</html>

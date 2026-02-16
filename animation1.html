@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background-color: peachpuff;
+    }
+
+    .box{
+        width: 150px;
+        color: white;
+        height: 150px;
+        border-radius: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(224, 153, 255);
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse{
+        0%{
+            transform: scale(1);
+            background-color: red;
+        }
+        50%{
+            transform: scale(1.09);
+            background-color: blue;
+        }
+        75%{
+            background-color: green;
+        }
+        100%{
+            transform: scale(1);
+            background-color:red;
+        }
+    } 
+
+</style>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>

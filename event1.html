@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" style="width: 100px; height: 100px; background-color: lightskyblue; text-align: center; display: flex; justify-content: center; align-items: center;"></div>
+</body>
+<script>
+    document.getElementById("box").onmouseover = function(){
+        box.style.backgroundColor = "black"
+        box.style.color = "white"
+        box.innerText = "Dekha aapne laparwahi ka natija"
+    }
+
+    document.getElementById("box").onmouseout = function(){
+        box.style.backgroundColor = "lightskyblue"
+        box.innerText = ""
+    }
+</script>
+</html>

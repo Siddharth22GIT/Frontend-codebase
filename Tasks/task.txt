@@ -1,0 +1,21 @@
+Create a webpage for a restraunt where - 
+1. Header should be present
+2. Set image as background and adjust it's opacity
+3. Create a slide show of 5 images of the top dishes
+4. Create 2 cards which includes images of dishes, customers can order- include ADD button, when a user clicks on it - a para should display count of item added 
+
+
+
+Create a form and apply events on it
+1. Name should be displayed in a paragraph
+2. Create a dropdown of subjects display which is chosen through a para
+3. apply an event through which when user submits the form, submit button should change it's color and text should change to Submitted.
+
+
+
+Create 2 divs, 1 should include welcome message for user. Another should display some image. Include transition for welcome message and animation for image.
+
+
+
+
+Create an attendance maintenance system. Current attendance is 10 Lectures, check the new attendance if lectures attended or not attended, show the result eligible to give exams or not. Threshold value is 20 lectures, Total value is 40 lectures.

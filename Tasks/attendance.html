@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+</head>
+<body>
+    <button onclick="checkEligibility()" style="width: 200px; height: 100px; font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Check Eligibility</button>
+</body>
+<script>
+    function checkEligibility(){
+
+        console.log("Current attendance: 10 Lectures")
+        console.log("Total lectures: 40")
+
+
+        function checkAttendance(lectures){
+            if(lectures < 20){
+                console.log("You are not eligible to take exams!")
+            }else{
+                console.log("You can take exams as you took", lectures, "lectures!") 
+            }
+        }
+        var lec= prompt("How many lectures did you attend?")
+
+        checkAttendance(lec)
+    }
+
+</script>
+</html>

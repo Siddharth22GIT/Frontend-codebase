@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordcounter</title>
+</head>
+<body>
+    <textarea name="" id="wordinput" rows="10" cols="50" oninput="countWord()"></textarea><br>
+    <p><h3>Word count: <span id="wrdcnt">0</span></h3></p>
+    <button onclick="clearText()">Clear text</button>
+</body>
+<script>
+    function countWord(){
+        text = document.getElementById("wordinput").value 
+        words = text.trim().split(/\s+/)
+        
+        document.getElementById("wrdcnt").innerText = words.length
+    }
+
+    function clearText(){
+        document.getElementById("wrdcnt").innerText = 0
+        document.getElementById("wordinput").value = ""
+    }
+</script>
+</html>

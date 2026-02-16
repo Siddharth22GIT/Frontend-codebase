@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT FORM</title>
+</head>
+
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flexible{
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+
+    <form onsubmit="changeState(event)">
+        <label>Name</label>
+        <input type="text" id="name">
+        <br><br>
+
+        <label>Choose subject</label><br>
+        <select id="subjects">
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Politics">Politics</option>
+        </select>
+        <br><br>
+
+        <button type="submit" id="btn">SUBMIT</button>
+    </form>
+
+    <br><br>
+
+    <p>Name of student: <span id="nm"></span></p>
+    <p>Subjects opted: <span id="sub"></span></p>
+
+    
+    <div class="flexible" id="gameDiv">
+        <img src="/images/scene1.png" alt="" width="240px" height="150px">
+        <p>GAME SCENE</p>
+    </div>
+    <button id="toggleButton">Hide</button>
+</body>
+
+<script>
+    function changeState(){
+
+        let studentName = document.getElementById("name").value;
+        let subjectOpted = document.getElementById("subjects").value;
+
+        document.getElementById("nm").innerText = studentName;
+        document.getElementById("sub").innerText = subjectOpted;
+
+        document.getElementById("btn").innerText = "SUBMITTED";
+        document.getElementById("btn").style.backgroundColor = "blue";
+        document.getElementById("btn").style.color = "white";
+    }
+
+    document.getElementById("toggleButton").onclick = function(){
+        let div = document.getElementById("gameDiv");
+
+        if(div.style.display === "none"){
+            div.style.display = "block";
+            this.innerText = "Hide";
+        }
+        else{
+            div.style.display = "none";
+            this.innerText = "Show";
+        }
+    }
+</script>
+
+</html>

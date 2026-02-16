@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2</title>
+</head>
+<style>
+
+    body{
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .one{
+        width: 150px;
+        height: 150px;
+        background-color: peachpuff;
+        animation: changeColor 2s infinite;
+    }
+
+    @keyframes changeColor {
+        from{
+            background-color: peachpuff;
+        }
+        to{
+            background-color: plum;
+            border-radius: 100px;
+        }
+    }
+</style>
+<body>
+    <div class="one"></div>
+</body>
+</html>

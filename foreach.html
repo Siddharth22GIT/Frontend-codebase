@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+
+<body>
+    <script>
+        // let colors = ["Red", "Green", "Blue"]
+
+        // colors.forEach(color => {
+        //     document.writeln(color)
+        // })
+
+        // document.writeln("<br>")
+        // colors.forEach(function (color) {
+        //     document.writeln(color)
+        // })
+
+// TASK 
+
+        let student = [1,2,3,4,5]
+        let newstudent = [6,7,8,9,10]
+
+        for(let i = 0; i<newstudent.length; i++){
+            student.push(newstudent[i])
+        }
+
+        let topper = 69
+        student.unshift(topper)
+
+        for(let i = 0; i<2; i++){
+            student.pop()
+        }
+
+        student.forEach(student => {
+            document.writeln(student + "<br>")
+        })
+    </script>
+</body>
+
+</html>
