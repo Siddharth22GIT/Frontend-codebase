@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread OP</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr1 = [20,40]
+    let arr2 = [...arr1,30,50]
+    console.log(arr2);
+
+    // Passing array to function
+
+    function sum(a,b,c){
+        return a + b + c
+    }
+
+    let arr3 = [10,20,30]
+    console.log(sum(...arr3));
+    
+</script>
+</html>

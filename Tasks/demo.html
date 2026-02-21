@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Website</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .header{
+        background-color: rgb(0, 97, 0);
+        padding: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+
+        .pages{
+            display: flex;
+            gap: 20px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 30px;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .div1{
+            background-color: rgb(253, 253, 253);
+            padding: 5px; 
+            border-radius: 10px;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+        }
+
+        .div2{
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px; 
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+        }
+        .right{
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+        }
+    }
+
+    .footer{
+        background-color: rgb(80, 80, 80);
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+
+
+</style>
+<body>
+    <div class="header">
+        <div class="heading">
+            <h1>Welcome to Your Website Task</h1>
+        </div>
+        <div class="pages">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="div1">
+                    <h3>About CSS</h3>
+                    <p>CSS is used to style and layout web pages, adding colors, spacing, and more.</p>
+                </div>
+                <div class="div2">
+                    <h3>Responsive Design</h3>
+                    <p>Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+                </div>
+            </div>
+            <div class="right">
+                <h3>Box Model</h3>
+                <p>The CSS box model describes the <br> rectangular boxes generated for elements. <br>It includes margins, borders, padding and <br> the actual content.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            created by Siddharth Mishra | Follow us on Instagram | Twitter | LinkedIn
+        </div>
+    </footer>
+</body>
+</html>
