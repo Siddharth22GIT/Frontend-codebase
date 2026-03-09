@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showResult()">Get Result</button>
+    <p id ="two"></p>
+    <script>
+        function showResult()
+        {
+            let result = " ";
+            console.log("Student Passed Exam")
+            result+="Student Passed exam <br>";
+            
+            setTimeout(function()
+            {
+                console.log("Result awaited")
+                document.getElementById("two").innerHTML+="Result awaited <br>";
+            },4000)
+
+            console.log("Student failed exam")
+            result+="Student failed exam <br>"
+
+            setTimeout(function()
+            {
+                console.log("Result calculating")
+                document.getElementById("two").innerHTML+="Result calculated <br>";
+            },2000)
+            document.getElementById("two").innerHTML=result
+       }
+    </script>
+</body>
+</html>
+<!--display result of 4 students
+s1- student passed ewxam
+s2 - setTimeout result aweaited
+s3 - Failed exam
+s4 - Result calculating with settimeout  -->

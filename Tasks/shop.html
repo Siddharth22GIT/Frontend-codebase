@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Management</title> 
+</head>
+<body>
+    
+</body>
+<script>
+    class Product{
+        constructor(name, price, category = "Veggies"){
+            this.name = name
+            this.price = price
+            this.category = category
+        }
+
+        displayProduct(){
+            console.log(`Product name: ${this.name}`);
+            console.log(`Product price: ${this.price}`);
+            console.log(`Product category: ${this.category}`);
+        }
+    }
+
+    const calculateTotal = (...prices) => {
+        const total = prices.reduce((sum, price) => sum + price, 0)
+        return total
+    }
+
+    const processPayment = (totalAmount) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if(totalAmount>0)
+                resolve(`Payment successful, total paid: ${totalAmount}`)
+                else
+                reject('Payment failed, INVALID AMOUNT!')
+                
+            }, 2000);
+        })
+    }
+
+    const showPaymentStatus = async (amount) => {
+        try {
+            const message = await processPayment(amount)
+            console.log(message);
+            
+        } catch (error) {
+          console.log("ERROR checking status: ",error);
+        }
+    }
+
+
+    const mainCart = () => {
+        const product1 = new Product("Aloo", 100)
+        const product2 = new Product("Gajar", 150)
+        const product3 = new Product("Mooli", 50)
+
+
+        console.log("Product details");
+        product1.displayProduct()
+        console.log()
+        
+        product2.displayProduct()
+        console.log()
+        
+        product3.displayProduct()
+        console.log()
+        
+        let prices = [product1.price, product2.price, product3.price]
+        let [p1, p2, p3] = prices
+
+        console.log(`Price1 - ${p1}`);
+        console.log(`Price2 - ${p2}`);
+        console.log(`Price3 - ${p3}`);
+        
+        let updatedPrice = [...prices,220]
+        console.log(updatedPrice);
+
+        const totalAmount = calculateTotal(...updatedPrice)
+        console.log(`Total amount: ${totalAmount}`);
+
+        showPaymentStatus(totalAmount)
+
+    }
+
+    mainCart()
+
+</script>
+</html>

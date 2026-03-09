@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Prototype Chain</h2>
+
+    <p id="one"></p>
+    <button onclick="showDetails()">Show details</button>
+    <script>
+ let grandParent = {
+        house : "Big House"
+    }
+
+    //Parent Object - inherits fromgrandparents
+    let parent = Object.create(grandParent);
+    parent.car = "LING";
+
+    //Child Object - inherits from parent
+    let child = Object.create(parent);
+    child.bike = "Honda";
+
+    function showDetails()
+    {
+        // document.getElementById("output").innerHTML=child.bike+" "+child.car+" "+child.house;
+        let result ="Bike : "+child.bike+"<br>"
+        result += "Car : "+child.car+"<br>"
+        result += "House : "+child.house+"<br>"
+        document.getElementById("one").innerHTML=result
+    }
+    </script>
+   
+</body>
+</html>
+<!-- WAP in which display details of student 
+Name
+course
+subject
+with chain -->

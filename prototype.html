@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Car(name){
+            this.name = name
+        }
+
+        Car.prototype.start = function(){
+            return this.name + "is starting..."
+        }
+
+        let c1 = new Car("Aston Martin")
+
+        document.getElementById("output").innerHTML = c1.start()
+    </script>
+</body>
+</html>

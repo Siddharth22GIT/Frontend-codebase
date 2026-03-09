@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scope Chain</h1>
+    <p id="one"></p>
+
+    <script>
+        let university = "LPU"
+
+        function outerFunction(){
+            let course = "Btech CSE"
+
+            function innerFunction(){
+                let studentName = "ABC"
+
+                document.getElementById('one').innerHTML = 
+                "Student :"+studentName+"<br>"+"Course: "+course+"<br>"+"University: "+university;
+
+                console.log(studentName)
+                console.log(course);
+                console.log(university);
+                
+            }
+            innerFunction()
+        }
+        outerFunction()
+    </script>
+</body>
+</html>

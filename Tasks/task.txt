@@ -19,3 +19,6 @@ Create 2 divs, 1 should include welcome message for user. Another should display
 
 
 Create an attendance maintenance system. Current attendance is 10 Lectures, check the new attendance if lectures attended or not attended, show the result eligible to give exams or not. Threshold value is 20 lectures, Total value is 40 lectures.
+
+
+Prepare one employee and salary management system using classes, display the details of the employee, emp id, department, salary. Store details of 4 different employees. Calculate the total salaries of all employees, if salary of 1 employee is updated, the total should change.

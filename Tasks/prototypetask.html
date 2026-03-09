@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Prototype example</h2>
+    <button onclick="showDetails()">Show bike details</button>
+    <p id="output"></p>
+    <script>
+        //Parent object- Factory
+        let bike = {
+            details: function()
+            {
+                return "Hayabhosda"
+            }
+        }
+        let model=Object.create(bike)
+        // model.modelName="Hayabusa";
+        // model.makeChocolate=function()
+        // {
+        //     return this.modelName+" "+this.details();
+        // }
+        // let shop=Object.create(model)
+
+        function showDetails()
+        {
+            document.getElementById("output").innerHTML=model.details();
+            console.log(model.details());
+        }
+    </script>
+</body>
+</html>
+
+<!-- //WAP to display the model details of new bike launched in the market
+//Name of the parent object is bike use protoype to display details. -->

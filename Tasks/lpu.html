@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LPU Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header{
+    background-color: rgb(16, 3, 159);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+header img{
+    height: 50px;
+}
+
+/* Marquee */
+marquee{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav{
+    background: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: orange;
+}
+
+/* Main Layout */
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    margin-left: 250px;
+    gap: 5px;
+}
+
+/* Sidebar */
+.sidebar{
+    width: 25%;
+    height: 350px;
+    background: rgb(212, 212, 214);
+    padding: 20px;
+}
+
+.sidebar h3{
+    margin-bottom: 15px;
+}
+
+.sidebar p{
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Content */
+.content{
+    display: flex;
+    gap: 30px;
+    /* padding: 30px; */
+}
+
+/* Content Boxes */
+.big-box{
+    img{
+        height: 150px;
+        width: 250px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="/images/lpu.png" alt="image">
+    <marquee>Lovely Professional University</marquee>
+</header>
+
+<nav>
+    <a href="#home"><i class="fa-solid fa-house"></i> HOME</a>
+    <a href="#article"><i class="fa-solid fa-blog"></i> Article</a>
+</nav>
+
+<div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Sidebar Menu</h3>
+        <p>Courses</p>
+        <p>Admission</p>
+        <p>Results</p>
+    </div>
+<h2>Main Content</h2><br>
+<p>This is a static layout. It does not adjust automatically to different screen sizes.</p>
+    <!-- Content -->
+    <div class="content">
+        <div class="big-box" id="home"><img src="/images/bunny.jpg" alt=""></div>
+        <div class="big-box" id="article"><img src="/images/scene1.png" alt=""></div>
+        <div class="big-box"><img src=/images/scene2.png " alt=""></div>
+    </div>
+
+    <div class="footer">
+        
+    </div>
+</div>
+
+</body>
+</html>

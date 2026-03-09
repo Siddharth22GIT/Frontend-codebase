@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Restauraunt Example</h2>
+    <button onclick="">Start Service</button>
+    <p id="one"></p>
+    <script>
+        function server(){
+            let result = ""
+
+            //Customer 1 request
+            result +="Customer 1: Serve Water <br>"
+            console.log("Customer 1: Serve Water")
+
+            //Customer 2 request
+            setTimeout(function(){
+                document.getElementById("one").innerHTML+="CUstomer 2: Serve the dish <br>";
+                console.log("Customer 2: Serve the dish")
+            },3000);
+            //customer 3 request
+            
+        }
+    </script>
+</body>
+</html>

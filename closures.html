@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>CLosure Ecample</h2>
+    <button onclick="runClosure()">Click to execute example</button>
+    <p id="one"></p>
+    <script>
+        function outer()
+        {
+            let name="abc"
+            //inner fn
+            function inner()
+            {
+                return "Student name: "+name
+            }
+            return inner
+            
+        }
+
+        //calling outer fn
+        const result=outer();
+        function runClosure()
+        {
+            document.getElementById("one").innerHTML=result()
+            console.log(result())
+        }
+    </script>
+</body>
+</html>
