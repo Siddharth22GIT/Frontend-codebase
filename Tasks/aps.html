@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Management System</title>
+</head>
+<style>
+    form {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        border: 2px solid black;
+        padding: 20px;
+    }
+
+    table {
+        justify-content: center;
+        margin-top: 50px;
+        padding: 2px;
+        border: 2px solid black;
+    }
+
+    th {
+        border: 2px solid black;
+        padding: 2px;
+    }
+
+    td{
+        border: 2px solid black;
+        padding: 2px;
+    }
+</style>
+
+<body>
+    <form onsubmit="addEntry(event)">
+        <h2>Book your seat now!</h2>
+        Name <input type="text" id="name"><br><br>
+        Date <input type="date" name="" id="dt"><br><br>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+
+    <table id="table">
+        <thead>
+            <th>Name</th>
+            <th>Date-Time</th>
+            <th>Change</th>
+        </thead>
+        <tbody id="tBody"></tbody>
+    </table>
+</body>
+
+<script>
+
+    function addEntry(e) {
+        e.preventDefault();
+
+        let name = document.getElementById('name').value;
+        let datetime = document.getElementById('dt').value;
+
+        let row = `
+        <tr>
+            <td>${name}</td>
+            <td>${datetime}</td>
+            <td><button onclick="this.parentElement.parentElement.remove()">Delete</button></td>
+        </tr>
+    `;
+
+        document.getElementById('tBody').innerHTML += row;
+    }
+</script>
+
+</html>

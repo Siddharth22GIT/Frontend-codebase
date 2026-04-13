@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .newClass{
+        color: red;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <p id="demo">Hello this is JS</p>
+    <button onclick="changeClass()">Click</button>
+    
+</body>
+<script>
+    function changeClass(){
+        let element = document.getElementById('demo')
+        element.setAttribute("class", "newClass")
+    }
+</script>
+</html>

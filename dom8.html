@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hello JS</p>
+    <button onclick="test()">Click</button>
+</body>
+<script>
+    function test(){
+        let element = document.getElementById('demo')
+        element.setAttribute("class", "myClass")
+
+        let result = element.getAttribute("class")
+        alert(result)
+    }
+</script>
+</html>

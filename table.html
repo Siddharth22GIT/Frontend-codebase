@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        tr{
+            border: 2px solid black;
+            padding: 5px;
+        }
+        th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        td{
+            padding: 15px;
+            border: 2px solid black;
+        }
+    }
+</style>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="" id="studentForm">
+        Registration No: <input type="text" id="register"><br>
+        Name: <input type="text" id="name"><br>
+        Section: <input type="text" id="section"><br>
+        <button type="submit">Add student</button>
+    </form>
+
+    <table>
+        <thead>
+            <th>Registration No</th>
+            <th>Name</th>
+            <th>Section</th>
+            <th>Action</th>
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+    </table>
+</body>
+
+<script>
+    document.getElementById('studentForm').addEventListener("submit", function(e){
+        e.preventDefault()
+
+        let reg = document.getElementById('register').value
+        let name = document.getElementById('name').value
+        let section = document.getElementById('section').value
+
+        let row = document.createElement('tr')
+        row.innerHTML = `
+        <td>${reg}</td>
+        <td>${name}</td>
+        <td>${section}</td>
+        <td><button class = "delete">Delete</button></td>
+        `
+    })
+</script>
+</html>

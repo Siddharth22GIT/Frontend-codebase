@@ -17,8 +17,39 @@ Create 2 divs, 1 should include welcome message for user. Another should display
 
 
 
-
 Create an attendance maintenance system. Current attendance is 10 Lectures, check the new attendance if lectures attended or not attended, show the result eligible to give exams or not. Threshold value is 20 lectures, Total value is 40 lectures.
 
 
 Prepare one employee and salary management system using classes, display the details of the employee, emp id, department, salary. Store details of 4 different employees. Calculate the total salaries of all employees, if salary of 1 employee is updated, the total should change.
+
+
+
+
+Design a page create a contact form for college event
+1. Include atleast 2 - label and 2 input types
+2. form can be reset after filling
+3. Include an image on the page, apply display toggle on it
+4. When user will enter the date in form, it should be stored in an ul
+5. Change the style of 2 paragraphs, which are having 1 class "myClass".
+
+
+
+Create a div with id  - "one" add css for that div with the help of DOM manipulation
+Search for CSS filters and app it with DOM manipulation.
+
+
+
+Prepare a file app.js to display the result of 3 different subjects French, English, Java, Use Module Bundling
+
+
+
+Develop a simple appointment management system using js to practice DOM manipulation and event handling. Create a form that allows users to enter appointment details such as Name, Date, and Time. When the form is submitted, the appointment should be dynamically added to a schedule displayed on the web page. Each appointment in the schedule should include a Delete button that allows users to remove the appointment from the list. This activity should demonstrate handling form events and updating DOM elements dynamically.
+
+
+Create an interface to work with object named Products
+Include properties like:
+Name of Product
+Price of Product
+Category of Product
+color
+display details of 2 products on the browser

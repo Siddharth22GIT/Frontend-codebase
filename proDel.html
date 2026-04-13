@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation and Event Delegation</title>
+</head>
+<style>
+    #parent{
+        padding: 20px;
+        background-color: palevioletred;
+    }
+
+    #child{
+        padding: 10px;
+        background-color: peachpuff;
+    }
+
+
+</style>
+<body>
+    <h2>Event Propagation</h2>
+
+    <div id="parent">
+        Parent Div <br>
+        <button id="child">Press</button>
+    </div>
+
+    <h2>Event Delegation</h2>
+
+    <ul id="list">
+        <li>ABC</li>
+        <li>ABC</li>
+        <li>ABC</li>
+    </ul>
+</body>
+
+<script>
+    // EVENT PROPAGATION
+
+    document.getElementById('parent').addEventListener("click", function(){
+        alert('Parent Clicked')
+        console.log('Parent Clicked');
+    })
+
+    document.getElementById('child').addEventListener("click", function(){
+        alert('Child clicked')
+        console.log("Button Clicked");
+    })
+
+
+    // EVENT DELEGATION
+
+    document.getElementById('list').addEventListener("click", function(e){
+        console.log('You clicked: ' + e.target.innerText);
+    })
+
+
+</script>
+</html>

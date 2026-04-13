@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="two">This is a para</p>
+    <button onclick="changeStyle()">Click</button>
+</body>
+<script>
+    function changeStyle(){
+        let element = document.getElementById('two')
+        element.style.color = "gold"
+        element.style.backgroundColor = "black"
+        element.style.fontSize = "20px"
+        element.style.padding = "5px"
+        element.style.borderRadius = "5px"
+        element.style.boxShadow = "0px 2px 5px gold"
+    }
+</script>
+</html>

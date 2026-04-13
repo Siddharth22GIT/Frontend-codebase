@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+
+    <button onclick="changeAll()">Click</button>
+</body>
+<script>
+    function changeAll(){
+        let all = document.querySelectorAll('p')
+        all[0].style.backgroundColor = "orange"
+        all[1].style.backgroundColor = "lightblue"
+        all[2].style.backgroundColor = "green"
+    }
+</script>
+</html>
