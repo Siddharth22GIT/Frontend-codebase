@@ -53,3 +53,9 @@ Price of Product
 Category of Product
 color
 display details of 2 products on the browser
+
+
+A startup is building a student registration module for its web application. The current implementation is written in javascript and works correctly, but frequent bugs occur due to missing type checks and unclear data structures.
+
+You are assigned to enhance the code by converting it into Typescript. Introduce proper data types, define interfaces for student data, and add typed function parameters and return tyrpes to make the application more reliable, readable, and mantainable while enabling early error detection
+
